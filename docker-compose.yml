@@ -41,7 +41,7 @@ services:
       - '.:/aural'
     env_file:
       - '.env'
-
+  # ActionCable, once I figure out what it's good for 
   # cable:
   #   depends_on:
   #     - 'redis'
