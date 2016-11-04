@@ -43,3 +43,5 @@ bower.json
 #Ignore Levi defined secret file
 #suffix
 *.secret
+#Your rants are your own man. Unless you want to use rant?
+/rants/

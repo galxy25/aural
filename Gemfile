@@ -16,7 +16,12 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Use react JSX for views
 gem 'react-rails'
+# When you edit components, they'll be reloaded 
+# by the browser & re-mounted in the page.
+gem 'react-rails-hot-loader'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
