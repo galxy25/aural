@@ -33,6 +33,7 @@ services:
       - 'postgres'
       - 'redis'
     build: .
+    command: bash -c "rails db:schema:load && rails db:seed && puma -C config/puma.rb"
     ports:
       - '3000:3000'
     volumes:
