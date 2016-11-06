@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use postgresql as the database for Active Record
@@ -16,9 +15,12 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# let us apply a respond_to rule to all the actions
+# in our controllers, making the code DRY-er
+gem 'responders'
 # Use react JSX for views
 gem 'react-rails'
-# When you edit components, they'll be reloaded 
+# When you edit components, they'll be reloaded
 # by the browser & re-mounted in the page.
 gem 'react-rails-hot-loader'
 
@@ -41,7 +43,7 @@ gem 'sidekiq'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  # For using rails with rspec conventions and generators 
+  # For using rails with rspec conventions and generators
   gem "rspec-rails"
 end
 
