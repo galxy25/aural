@@ -6,5 +6,5 @@
 # Examples:
 #
 # Create the first seed rants
-Rant.create!(title: 'Hear Steve Rant!', uri: 'steve.mp3')
-Rant.create!(title: 'Hear Levi Rant!', uri: 'levi.mp3')
+Rant.create!(title: 'Hear Steve Rant!', uri: 'www.rant-it.com/steve.mp3')
+Rant.create!(title: 'Hear Levi Rant!', uri: 'www.rant-it.com/levi.mp3')

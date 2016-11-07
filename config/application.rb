@@ -11,6 +11,9 @@ module Aural
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    # Setup logging to stdout
+    # since we expect this app to run in
+    # a container with an ephermal file system
 	  logger           = ActiveSupport::Logger.new(STDOUT)
 		logger.formatter = config.log_formatter
 		config.log_tags  = [:subdomain, :uuid]

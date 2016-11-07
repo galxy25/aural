@@ -40,6 +40,8 @@ services:
       - '.:/aural'
     env_file:
       - '.env'
+    stdin_open: true
+    tty: true
 
   sidekiq:
     depends_on:
@@ -51,6 +53,8 @@ services:
       - '.:/aural'
     env_file:
       - '.env'
+    stdin_open: true
+    tty: true  
   # ActionCable, once I figure out what it's good for 
   # cable:
   #   depends_on:

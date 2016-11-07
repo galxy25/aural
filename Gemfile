@@ -23,7 +23,8 @@ gem 'react-rails'
 # When you edit components, they'll be reloaded
 # by the browser & re-mounted in the page.
 gem 'react-rails-hot-loader'
-
+# Lodash for when you're too cool for underscore.js
+gem 'lodash-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

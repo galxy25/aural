@@ -13,8 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require lodash
 //= require react
 //= require react_ujs
 //= require components
+//= require_tree ./stores 
 //= require react-rails-hot-loader
 //= require_tree .
