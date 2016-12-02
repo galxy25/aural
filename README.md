@@ -16,7 +16,7 @@ Postgres
 * Database creation
 
 MacOS
-Delete /usr/local/var/postgres if previous 
+Delete /usr/local/var/postgres if previous
 version of postgres
 brew install postgres
 brew services start postgresql

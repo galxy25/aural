@@ -5,13 +5,13 @@ services:
     image: 'postgres:9.5'
     environment:
       POSTGRES_USER: 'aural'
-      POSTGRES_PASSWORD: 
+      POSTGRES_PASSWORD:
     ports:
       - '5432:5432'
     volumes:
       - 'postgres:/var/lib/postgresql/data'
 
-  mailcatcher: 
+  mailcatcher:
     #https://mailcatcher.me/
     image: schickling/mailcatcher:latest
     ports:
@@ -22,7 +22,7 @@ services:
 
   redis:
     image: 'redis:3.2-alpine'
-    command: redis-server 
+    command: redis-server
     ports:
       - '6379:6379'
     volumes:
@@ -54,8 +54,8 @@ services:
     env_file:
       - '.env'
     stdin_open: true
-    tty: true  
-  # ActionCable, once I figure out what it's good for 
+    tty: true
+  # ActionCable, once I figure out what it's good for
   # cable:
   #   depends_on:
   #     - 'redis'
