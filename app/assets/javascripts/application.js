@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require turbolinks
 //= require lodash
 //= require react
@@ -20,3 +21,5 @@
 //= require_tree ./stores
 //= require react-rails-hot-loader
 //= require_tree .
+
+$(function(){ $(document).foundation(); });
